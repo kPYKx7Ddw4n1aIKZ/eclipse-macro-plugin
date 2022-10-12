@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.e4.ui.macros.feature"
+      id="org.xeclipse.macros.macro-plugin.feature"
       label="Eclipse Macros"
       version="0.1.0.qualifier"
       provider-name="Eclipse.org">

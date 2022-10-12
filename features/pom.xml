@@ -23,6 +23,6 @@ apache.org/xsd/maven-4.0.0.xsd">
   <packaging>pom</packaging>
 
   <modules>
-    <module>org.eclipse.e4.ui.macros.feature</module>
+    <module>org.xeclipse.macros.macro-plugin.feature</module>
   </modules>
 </project>
