@@ -7,7 +7,7 @@ Bundle-Version: 0.1.0.qualifier
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.junit,
- org.eclipse.e4.core.macros,
+ org.xeclipse.macros.macro-plugin.core,
  org.eclipse.e4.core.contexts,
  org.eclipse.e4.core.di,
  org.eclipse.e4.ui.bindings,

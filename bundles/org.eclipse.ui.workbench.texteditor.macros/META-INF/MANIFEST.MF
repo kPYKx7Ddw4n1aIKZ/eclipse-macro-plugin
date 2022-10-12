@@ -8,7 +8,7 @@ Bundle-Vendor: Eclipse.org
 Require-Bundle: org.eclipse.e4.ui.bindings;bundle-version="0.10",
  org.eclipse.e4.ui.macros;bundle-version="0.1",
  org.eclipse.ui.workbench;bundle-version="3.108",
- org.eclipse.e4.core.macros,
+ org.xeclipse.macros.macro-plugin.core,
  org.eclipse.swt,
  org.eclipse.osgi,
  org.eclipse.jface.text,
