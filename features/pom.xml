@@ -13,9 +13,9 @@
 apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.eclipse.e4.ui</groupId>
-    <artifactId>e4-ui-aggregator</artifactId>
-    <version>0.17.0-SNAPSHOT</version>
+    <groupId>org.xeclipse.macros</groupId>
+    <artifactId>macro-plugin</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
   <groupId>org.eclipse.e4.ui</groupId>
   <artifactId>org.eclipse.e4.ui.features</artifactId>
