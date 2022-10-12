@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Macros for text editors
+Bundle-SymbolicName: org.eclipse.ui.workbench.texteditor.macros;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Activator: org.eclipse.ui.workbench.texteditor.macros.Activator
+Bundle-Vendor: Eclipse.org
+Require-Bundle: org.eclipse.e4.ui.bindings;bundle-version="0.10",
+ org.eclipse.e4.ui.macros;bundle-version="0.1",
+ org.eclipse.ui.workbench;bundle-version="3.108",
+ org.eclipse.e4.core.macros,
+ org.eclipse.swt,
+ org.eclipse.osgi,
+ org.eclipse.jface.text,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.jface;bundle-version="3.13.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: javax.inject,
+ org.eclipse.core.runtime;version="3.5",
+ org.eclipse.e4.core.commands,
+ org.eclipse.e4.core.contexts,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.core.di.annotations,
+ org.osgi.framework;version="1.8"
+Bundle-ActivationPolicy: lazy

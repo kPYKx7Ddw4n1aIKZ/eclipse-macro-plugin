@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.eclipse.e4.core.macros" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="org.eclipse.e4.core.macros" id="macroInstructionsFactory" name="Factory for macro instructions"/>
+      </appinfo>
+      <documentation>
+         Register a factory for macro instructions (which is able to recreate an IMacroInstruction from the contents of its toMap() function).
+
+Any macro instruction which is added to the macro engine during the record phase must have a factory registered through this extension point (an error will be thrown if that&apos;s not the case).
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <choice minOccurs="1" maxOccurs="unbounded">
+            <element ref="macroInstructionsFactory"/>
+         </choice>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="macroInstructionsFactory">
+      <annotation>
+         <documentation>
+            A macro instruction factory, which is used to recreate a macro previously persisted during a macro record session (in order to properly play it back later on).
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="macroInstructionId" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The id of the macro instruction which this factory can be used to create (i.e., the method org.eclipse.e4.core.macros.IMacroInstruction.getId(), of the macro instructions created by this factory must return the same id).
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="identifier"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The class which is the factory to recreate macro instructions.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":org.eclipse.e4.core.macros.IMacroInstructionFactory"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         0.1.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         &lt;extension point=&quot;org.eclipse.e4.core.macros.macroInstructionsFactory&quot;&gt;
+    &lt;macroInstructionsFactory
+        class=&quot;org.eclipse.MyIMacroInstructionFactoryImplementation&quot;
+        macroInstructionId=&quot;org.eclipse.my.macro.instructionId&quot;&gt;
+    &lt;/macroInstructionsFactory&gt;
+&lt;/extension&gt;
+      </documentation>
+   </annotation>
+
+
+
+
+</schema>

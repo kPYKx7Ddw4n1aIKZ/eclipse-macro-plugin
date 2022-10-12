@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.eclipse.e4.ui.macros.feature" version="0.1.0.qualifier">
+      <category name="Macros"/>
+   </feature>
+   <category-def name="Macros" label="Keyboard macros">
+      <description>
+         Record/playback
+      </description>
+   </category-def>
+</site>

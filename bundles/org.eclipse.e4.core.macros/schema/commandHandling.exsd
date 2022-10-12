@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.eclipse.e4.ui.macros" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="org.eclipse.e4.ui.macros" id="commandHandling" name=""/>
+      </appinfo>
+      <documentation>
+         Describes how to customize how the macro framework handles invocations of Eclipse Core Commands during macro recording. When recording a macro the default behaviour is to record a command invocation as a macro instruction, and this extension allows for skipping the creation of the macro instruction for a command invocation.
+
+It is also possible to programatically customize how Eclipse commands are handled through the org.eclipse.e4.core.macros.EMacroService.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <choice minOccurs="1" maxOccurs="unbounded">
+            <element ref="command"/>
+         </choice>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="command">
+      <annotation>
+         <documentation>
+            An Eclipse Core Command to be customized during macro record/playback.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The Eclipse Core Command identifier.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="identifier" basedOn="org.eclipse.ui.commands/command/@id"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="recordMacroInstruction" type="boolean" use="required">
+            <annotation>
+               <documentation>
+                  If true, the activation of the command will be recorded in the macro (i.e., an IMacroInstruction will be automatically created and added to the macro when in record mode) and if false it won&apos;t.
+
+Examples of actions whose activation should be recorded include copy, paste, delete line and anything whose playback is simply re-executing that action.
+
+Examples of actions whose activation should not be recorded (in which case, they&apos;re allowed to execute, but only its side-effect should be recorded) include open find dialog (it should not open the dialog, just record the find text or replace text later on) and code-completion (code-completion may be allowed, but only the actual apply of a given code-completion should be recorded -- although the editor itself may decide to disable code-completion at its level so that the action does nothing until its code-completions aren&apos;t actually recorded in the macro).
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         0.1.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         &lt;extension point=&quot;org.eclipse.e4.core.macros.commandHandling&quot;&gt;
+    &lt;command id=&quot;org.eclipse.ui.edit.text.contentAssist.proposals&quot; recordMacroInstruction=&quot;false&quot;/&gt;
+&lt;/extension&gt;
+
+Will let the command &quot;org.eclipse.ui.edit.text.contentAssist.proposals&quot; be executed but will not record it to be re-executed on macro playback (in which case the command is responsible for recording its side-effects in the macro later on).
+      </documentation>
+   </annotation>
+
+
+
+
+</schema>

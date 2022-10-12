@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+
+   <extension point="org.eclipse.e4.core.macros.commandHandling">
+
+      <!-- We should be able to stop the macro recording after the recording started. -->
+      <command id="org.eclipse.e4.ui.macros.toggleRecordMacro" recordMacroInstruction="false"/>
+
+      <!-- Playback is Ok during recording, but only its side-effects are recorded, not the command itself. -->
+      <command id="org.eclipse.e4.ui.macros.macroPlayback" recordMacroInstruction="false"/>
+
+      <!-- Disable recording of actions not related to the editor (which the user may choose to do
+      but shouldn't interfere with the macro recording). -->
+      <command id="org.eclipse.ui.window.nextEditor" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.window.nextView" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.window.nextPerspective" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.navigate.showInQuickMenu" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.window.showKeyAssist" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.window.openEditorDropDown" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.window.quickAccess" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.edit.findReplace" recordMacroInstruction="false"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.e4.core.macros.macroInstructionsFactory">
+      <macroInstructionsFactory
+            class="org.eclipse.e4.ui.macros.internal.keybindings.MacroInstructionForParameterizedCommandFactory"
+            macroInstructionId="Command">
+      </macroInstructionsFactory>
+   </extension>
+
+   <extension
+         point="org.eclipse.e4.core.macros.macroStateListeners">
+      <macroStateListener
+            class="org.eclipse.e4.ui.macros.internal.keybindings.CommandManagerExecutionListenerInstaller">
+      </macroStateListener>
+      <macroStateListener
+            class="org.eclipse.e4.ui.macros.internal.actions.MacroUIUpdater">
+      </macroStateListener>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="org.eclipse.e4.ui.macros.category"
+            name="%category.macros.name">
+      </category>
+      <command
+            categoryId="org.eclipse.e4.ui.macros.category"
+            defaultHandler="org.eclipse.e4.ui.macros.internal.actions.ToggleMacroRecordAction"
+            id="org.eclipse.e4.ui.macros.toggleRecordMacro"
+            name="%command.toggle_macro_record.label">
+      </command>
+      <command
+            categoryId="org.eclipse.e4.ui.macros.category"
+            defaultHandler="org.eclipse.e4.ui.macros.internal.actions.MacroPlaybackAction"
+            id="org.eclipse.e4.ui.macros.macroPlayback"
+            name="%command.macro_playback.name">
+      </command>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="org.eclipse.e4.ui.macros.toolbar"
+               label="%toolbar.macro.label">
+            <command
+                  commandId="org.eclipse.e4.ui.macros.toggleRecordMacro"
+                  icon="icons/full/dtool16/macro_record.png"
+                  label="%command.toggle_macro_record.label"
+                  style="toggle">
+            </command>
+            <command
+                  commandId="org.eclipse.e4.ui.macros.macroPlayback"
+                  icon="icons/full/dtool16/macro_playback.png"
+                  label="%command.macro_playback.name"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

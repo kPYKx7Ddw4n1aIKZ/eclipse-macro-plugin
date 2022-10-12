@@ -1,0 +1,13 @@
+/examples/tycho/license-feature-example/*/target/
+/examples/tycho/license-feature-example/org.eclipse.examples.hello/bin/
+/*/*/bin/
+*~
+*.rej
+*.bak
+*.patch
+javacore.*
+heapdump.*
+core.*
+Snap.*
+/*/*/target/
+

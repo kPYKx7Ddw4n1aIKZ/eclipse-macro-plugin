@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="macroInstructionsFactory" name="%extension-point.macroInstructionsFactory.name" schema="schema/macroInstructionsFactory.exsd"/>
+   <extension-point id="macroStateListeners" name="%extension-point.macroStateListeners.name" schema="schema/macroStateListeners.exsd"/>
+   <extension-point id="commandHandling" name="%extension-point.commandHandling.name" schema="schema/commandHandling.exsd"/>
+</plugin>

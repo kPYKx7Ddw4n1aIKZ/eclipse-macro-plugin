@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.e4.core.macros.macroStateListeners">
+      <macroStateListener
+            class="org.eclipse.ui.workbench.texteditor.macros.internal.NotifyMacroOnlyInCurrentEditorInstaller">
+      </macroStateListener>
+      <macroStateListener
+            class="org.eclipse.ui.workbench.texteditor.macros.internal.MacroStyledTextInstaller">
+      </macroStateListener>
+   </extension>
+
+   <extension
+         point="org.eclipse.e4.core.macros.macroInstructionsFactory">
+      <macroInstructionsFactory
+            class="org.eclipse.ui.workbench.texteditor.macros.internal.StyledTextKeyDownMacroInstructionFactory"
+            macroInstructionId="KeyEvent">
+      </macroInstructionsFactory>
+   </extension>
+
+   <extension point="org.eclipse.e4.core.macros.commandHandling">
+      <command id="org.eclipse.ui.edit.text.contentAssist.proposals" recordMacroInstruction="false"/>
+      <command id="org.eclipse.ui.edit.text.quick_assist.proposals" recordMacroInstruction="false"/>
+   </extension>
+
+</plugin>

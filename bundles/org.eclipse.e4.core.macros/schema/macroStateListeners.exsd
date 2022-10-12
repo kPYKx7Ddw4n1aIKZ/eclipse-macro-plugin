@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.eclipse.e4.core.macros" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="org.eclipse.e4.core.macros" id="macroStateListeners" name="Listeners for changes on the macro state"/>
+      </appinfo>
+      <documentation>
+         Allows for other plugins to register listeners to be notified of changes in the macro service (i.e., when a record or playback is started or stopped).
+
+It is possible, for instance, to add listeners which will do the recording of keystrokes for playing back later when that happens, disable commands/actions which are not allowed during macro record/playback, add a listener to record changes to preferences, etc.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <choice minOccurs="1" maxOccurs="unbounded">
+            <element ref="macroStateListener"/>
+         </choice>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="macroStateListener">
+      <complexType>
+         <attribute name="class" type="string">
+            <annotation>
+               <documentation>
+                  A listener for changes in the macro state (i.e., macro record or playback started or stopped).
+
+These events signal that packages should install and remove instrumentation for generating macro instructions in response to user gestures.
+
+Note: it is also possible to programatically add an IMacroStateListener to the EMacroService (so, existing instances, such as the text editor can act upon starting a macro record session and start recording keystrokes or disable code-completion if it cannot deal with playing it back).
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":org.eclipse.e4.core.macros.IMacroStateListener"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         0.1.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         &lt;extension point=&quot;org.eclipse.e4.core.macros.macroStateListeners&quot;&gt;
+    &lt;macroStateListener
+        class=&quot;org.eclipse.impl.MyIMacroStateListenerImpl&quot;&gt;
+    &lt;/macroStateListener&gt;
+&lt;/extension&gt;
+      </documentation>
+   </annotation>
+
+
+
+
+</schema>

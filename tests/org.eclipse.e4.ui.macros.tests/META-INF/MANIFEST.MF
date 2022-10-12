@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Macro tests
+Bundle-SymbolicName: org.eclipse.e4.ui.macros.tests;singleton:=true
+Bundle-Activator: org.eclipse.e4.ui.macros.tests.Activator
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.junit,
+ org.eclipse.e4.core.macros,
+ org.eclipse.e4.core.contexts,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.ui.bindings,
+ org.eclipse.e4.core.commands,
+ org.eclipse.e4.ui.services,
+ org.eclipse.e4.ui.macros
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
