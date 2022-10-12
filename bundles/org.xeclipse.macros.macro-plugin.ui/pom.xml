@@ -18,7 +18,8 @@
     <relativePath>../../</relativePath>
   </parent>
 
-  <artifactId>org.eclipse.e4.ui.macros</artifactId>
+  <groupId>org.xeclipse.macros</groupId>
+  <artifactId>org.xeclipse.macros.macro-plugin.ui</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
 </project>

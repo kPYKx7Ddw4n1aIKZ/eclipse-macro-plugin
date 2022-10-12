@@ -6,7 +6,7 @@ Bundle-Version: 0.1.0.qualifier
 Bundle-Activator: org.eclipse.ui.workbench.texteditor.macros.Activator
 Bundle-Vendor: Eclipse.org
 Require-Bundle: org.eclipse.e4.ui.bindings;bundle-version="0.10",
- org.eclipse.e4.ui.macros;bundle-version="0.1",
+ org.xeclipse.macros.macro-plugin.ui;bundle-version="0.1",
  org.eclipse.ui.workbench;bundle-version="3.108",
  org.xeclipse.macros.macro-plugin.core,
  org.eclipse.swt,

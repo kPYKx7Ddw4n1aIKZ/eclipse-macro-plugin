@@ -13,6 +13,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.e4.ui.bindings,
  org.eclipse.e4.core.commands,
  org.eclipse.e4.ui.services,
- org.eclipse.e4.ui.macros
+ org.xeclipse.macros.macro-plugin.ui
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

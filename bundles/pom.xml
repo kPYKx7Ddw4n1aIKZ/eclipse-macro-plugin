@@ -24,7 +24,7 @@ apache.org/xsd/maven-4.0.0.xsd">
 
   <modules>
     <module>org.xeclipse.macros.macro-plugin.core</module>
-    <module>org.eclipse.e4.ui.macros</module>
+    <module>org.xeclipse.macros.macro-plugin.ui</module>
     <module>org.eclipse.ui.workbench.texteditor.macros</module>
   </modules>
 </project>

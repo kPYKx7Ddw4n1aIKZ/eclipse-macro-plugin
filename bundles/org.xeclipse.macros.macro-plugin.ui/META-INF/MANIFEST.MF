@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: E4 Macro Recording and Playback
-Bundle-SymbolicName: org.eclipse.e4.ui.macros;singleton:=true
+Bundle-SymbolicName: org.xeclipse.macros.macro-plugin.ui;singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Bundle-Activator: org.eclipse.e4.ui.macros.Activator
 Bundle-Vendor: Eclipse.org
