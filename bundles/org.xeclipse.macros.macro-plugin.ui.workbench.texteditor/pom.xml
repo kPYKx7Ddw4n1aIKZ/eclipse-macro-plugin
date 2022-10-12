@@ -18,7 +18,8 @@
     <relativePath>../../</relativePath>
   </parent>
 
-  <artifactId>org.eclipse.ui.workbench.texteditor.macros</artifactId>
+  <groupId>org.xeclipse.macros</groupId>
+  <artifactId>org.xeclipse.macros.macro-plugin.ui.workbench.texteditor</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
 

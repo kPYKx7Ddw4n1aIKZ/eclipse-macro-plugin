@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.eclipse.ui.workbench.texteditor.macros</name>
+	<name>org.xeclipse.macros.macro-plugin.ui.workbench.texteditor</name>
 	<comment></comment>
 	<projects>
 	</projects>
