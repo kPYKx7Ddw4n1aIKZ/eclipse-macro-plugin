@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Macro tests
-Bundle-SymbolicName: org.eclipse.e4.ui.macros.tests;singleton:=true
+Bundle-SymbolicName: org.xeclipse.macros.macro-plugin.ui.tests;singleton:=true
 Bundle-Activator: org.eclipse.e4.ui.macros.tests.Activator
 Bundle-Version: 0.1.0.qualifier
 Require-Bundle: org.eclipse.ui,

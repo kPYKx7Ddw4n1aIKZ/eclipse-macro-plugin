@@ -75,7 +75,7 @@
     </plugins>
   </build>
   <modules>
-    <module>tests/org.eclipse.e4.ui.macros.tests</module>
+    <module>tests/org.xeclipse.macros.macro-plugin.ui.tests</module>
     <module>build/org.xeclipse.macros.macro-plugin.update</module>
     <module>bundles</module>
     <module>features</module>
