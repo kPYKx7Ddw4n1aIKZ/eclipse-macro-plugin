@@ -26,7 +26,7 @@ public class ToggleMacroRecordAction extends AbstractHandler implements IElement
 	/**
 	 * The id of the toggle macro record action.
 	 */
-	public static final String COMMAND_ID = "org.eclipse.e4.ui.macros.toggleRecordMacro"; //$NON-NLS-1$
+	public static final String COMMAND_ID = "org.xeclipse.macros.macro-plugin.ui.toggleRecordMacro"; //$NON-NLS-1$
 
 	@Override
 	public Object execute(ExecutionEvent event) {
