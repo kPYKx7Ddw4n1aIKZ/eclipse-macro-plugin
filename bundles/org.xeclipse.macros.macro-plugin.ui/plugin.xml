@@ -2,7 +2,7 @@
 <plugin>
 
 
-   <extension point="org.eclipse.e4.core.macros.commandHandling">
+   <extension point="org.xeclipse.macros.macro-plugin.core.commandHandling">
 
       <!-- We should be able to stop the macro recording after the recording started. -->
       <command id="org.eclipse.e4.ui.macros.toggleRecordMacro" recordMacroInstruction="false"/>
@@ -23,7 +23,7 @@
    </extension>
 
    <extension
-         point="org.eclipse.e4.core.macros.macroInstructionsFactory">
+         point="org.xeclipse.macros.macro-plugin.core.macroInstructionsFactory">
       <macroInstructionsFactory
             class="org.eclipse.e4.ui.macros.internal.keybindings.MacroInstructionForParameterizedCommandFactory"
             macroInstructionId="Command">
@@ -31,7 +31,7 @@
    </extension>
 
    <extension
-         point="org.eclipse.e4.core.macros.macroStateListeners">
+         point="org.xeclipse.macros.macro-plugin.core.macroStateListeners">
       <macroStateListener
             class="org.eclipse.e4.ui.macros.internal.keybindings.CommandManagerExecutionListenerInstaller">
       </macroStateListener>

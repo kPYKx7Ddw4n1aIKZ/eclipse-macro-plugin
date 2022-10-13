@@ -42,16 +42,16 @@ import org.eclipse.e4.core.macros.MacroPlaybackException;
  * with the eclipse context and extension points).
  */
 public class MacroServiceImpl implements EMacroService {
-	private static final String MACRO_COMMAND_HANDLING_EXTENSION_POINT = "org.eclipse.e4.core.macros.commandHandling"; //$NON-NLS-1$
+	private static final String MACRO_COMMAND_HANDLING_EXTENSION_POINT = "org.xeclipse.macros.macro-plugin.core.commandHandling"; //$NON-NLS-1$
 	private static final String MACRO_COMMAND_HANDLING_ELEMENT = "command"; //$NON-NLS-1$
 	private static final String MACRO_COMMAND_HANDLING_ID = "id"; //$NON-NLS-1$
 	private static final String MACRO_COMMAND_HANDLING_RECORDING = "recordMacroInstruction"; //$NON-NLS-1$
 
-	public static final String MACRO_INSTRUCTION_FACTORY_EXTENSION_POINT = "org.eclipse.e4.core.macros.macroInstructionsFactory"; //$NON-NLS-1$
+	public static final String MACRO_INSTRUCTION_FACTORY_EXTENSION_POINT = "org.xeclipse.macros.macro-plugin.core.macroInstructionsFactory"; //$NON-NLS-1$
 	public static final String MACRO_INSTRUCTION_ID = "macroInstructionId"; //$NON-NLS-1$
 	public static final String MACRO_INSTRUCTION_FACTORY_CLASS = "class"; //$NON-NLS-1$
 
-	public static final String MACRO_LISTENERS_EXTENSION_POINT = "org.eclipse.e4.core.macros.macroStateListeners"; //$NON-NLS-1$
+	public static final String MACRO_LISTENERS_EXTENSION_POINT = "org.xeclipse.macros.macro-plugin.core.macroStateListeners"; //$NON-NLS-1$
 	public static final String MACRO_LISTENER_CLASS = "class"; //$NON-NLS-1$
 
 	// id to factory used in instance

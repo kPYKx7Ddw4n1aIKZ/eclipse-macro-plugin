@@ -2,7 +2,7 @@
 <plugin>
 
    <extension
-         point="org.eclipse.e4.core.macros.macroStateListeners">
+         point="org.xeclipse.macros.macro-plugin.core.macroStateListeners">
       <macroStateListener
             class="org.eclipse.ui.workbench.texteditor.macros.internal.NotifyMacroOnlyInCurrentEditorInstaller">
       </macroStateListener>
@@ -12,14 +12,14 @@
    </extension>
 
    <extension
-         point="org.eclipse.e4.core.macros.macroInstructionsFactory">
+         point="org.xeclipse.macros.macro-plugin.core.macroInstructionsFactory">
       <macroInstructionsFactory
             class="org.eclipse.ui.workbench.texteditor.macros.internal.StyledTextKeyDownMacroInstructionFactory"
             macroInstructionId="KeyEvent">
       </macroInstructionsFactory>
    </extension>
 
-   <extension point="org.eclipse.e4.core.macros.commandHandling">
+   <extension point="org.xeclipse.macros.macro-plugin.core.commandHandling">
       <command id="org.eclipse.ui.edit.text.contentAssist.proposals" recordMacroInstruction="false"/>
       <command id="org.eclipse.ui.edit.text.quick_assist.proposals" recordMacroInstruction="false"/>
    </extension>
