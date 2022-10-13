@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.ui.macros.tests;
+package org.xeclipse.macros.macro_plugin.tests;
 
 import java.io.File;
 import java.io.FilenameFilter;
