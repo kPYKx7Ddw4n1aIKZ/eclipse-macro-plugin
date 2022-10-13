@@ -8,13 +8,13 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core;
 
 /**
- * An exception to be thrown when the macro playback should be stopped.
+ * Base class for canceling macro record/playback.
  */
-public class CancelMacroPlaybackException extends CancelMacroException {
+public abstract class CancelMacroException extends Exception {
 
-	private static final long serialVersionUID = -953668757199552819L;
+	private static final long serialVersionUID = -7828623675170028608L;
 
 }

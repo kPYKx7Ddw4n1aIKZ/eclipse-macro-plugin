@@ -11,8 +11,8 @@
 package org.eclipse.ui.workbench.texteditor.macros.internal;
 
 import java.util.Map;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroInstructionFactory;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionFactory;
 
 /**
  * A factory which will create macro instructions for styled text key presses.

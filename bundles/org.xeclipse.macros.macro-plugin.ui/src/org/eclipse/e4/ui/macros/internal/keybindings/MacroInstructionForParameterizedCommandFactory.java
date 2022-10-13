@@ -14,8 +14,8 @@ import java.util.Map;
 import javax.inject.Inject;
 import org.eclipse.core.commands.CommandManager;
 import org.eclipse.e4.core.commands.EHandlerService;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroInstructionFactory;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionFactory;
 
 /**
  * Factory for macro instructions which were created from parameterized

@@ -37,11 +37,6 @@ import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.di.annotations.CanExecute;
 import org.eclipse.e4.core.di.annotations.Execute;
-import org.eclipse.e4.core.macros.EMacroService;
-import org.eclipse.e4.core.macros.IMacroRecordContext;
-import org.eclipse.e4.core.macros.IMacroStateListener;
-import org.eclipse.e4.core.macros.internal.MacroManager;
-import org.eclipse.e4.core.macros.internal.MacroServiceImpl;
 import org.eclipse.e4.ui.bindings.BindingServiceAddon;
 import org.eclipse.e4.ui.bindings.EBindingService;
 import org.eclipse.e4.ui.bindings.internal.BindingTable;
@@ -70,6 +65,11 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+import org.xeclipse.macros.macro_plugin.core.EMacroService;
+import org.xeclipse.macros.macro_plugin.core.IMacroRecordContext;
+import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
+import org.xeclipse.macros.macro_plugin.core.internal.MacroManager;
+import org.xeclipse.macros.macro_plugin.core.internal.MacroServiceImpl;
 
 @SuppressWarnings("restriction")
 public class KeyBindingDispatcherMacroIntegrationTest {

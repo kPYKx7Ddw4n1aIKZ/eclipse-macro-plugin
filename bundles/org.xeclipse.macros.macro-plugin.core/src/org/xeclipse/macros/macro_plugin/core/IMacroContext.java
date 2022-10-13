@@ -8,11 +8,11 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core;
 
 /**
  * The context bound to the macro record or playback.
- * {@link org.eclipse.e4.core.macros.IMacroStateListener Macro state listeners}
+ * {@link org.xeclipse.macros.macro_plugin.core.IMacroStateListener Macro state listeners}
  * registered with a {@link EMacroService} may use it as a simple key-value
  * store to keep macro-specific state during macro recording and playback.
  */

@@ -13,13 +13,13 @@ package org.eclipse.e4.ui.macros.internal.actions;
 import javax.inject.Inject;
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.macros.EMacroService;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroInstructionsListener;
-import org.eclipse.e4.core.macros.IMacroStateListener;
 import org.eclipse.e4.ui.macros.internal.UserNotifications;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.commands.ICommandService;
+import org.xeclipse.macros.macro_plugin.core.EMacroService;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionsListener;
+import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
 
 /**
  * Makes sure that the toolbar elements are kept properly updated even if the

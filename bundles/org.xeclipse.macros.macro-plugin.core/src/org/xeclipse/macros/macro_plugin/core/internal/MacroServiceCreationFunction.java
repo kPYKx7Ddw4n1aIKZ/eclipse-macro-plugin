@@ -8,16 +8,16 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros.internal;
+package org.xeclipse.macros.macro_plugin.core.internal;
 
 import org.eclipse.e4.core.contexts.ContextFunction;
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.macros.EMacroService;
+import org.xeclipse.macros.macro_plugin.core.EMacroService;
 
 /**
  * Creates a
- * {@link org.eclipse.e4.core.macros.internal.MacroServiceImpl} (to be
+ * {@link org.xeclipse.macros.macro_plugin.core.internal.MacroServiceImpl} (to be
  * bound to EMacroService).
  *
  * @note internal API: users should generally just get the EMacroService as a

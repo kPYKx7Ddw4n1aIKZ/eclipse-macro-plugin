@@ -19,11 +19,11 @@ import org.eclipse.core.commands.ParameterizedCommand;
 import org.eclipse.e4.core.commands.EHandlerService;
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.macros.EMacroService;
 import org.eclipse.e4.ui.macros.Activator;
 import org.eclipse.e4.ui.macros.internal.EditorUtils;
 import org.eclipse.e4.ui.macros.internal.UserNotifications;
 import org.eclipse.swt.widgets.Event;
+import org.xeclipse.macros.macro_plugin.core.EMacroService;
 
 /**
  * Used to record commands being executed in the current macro.

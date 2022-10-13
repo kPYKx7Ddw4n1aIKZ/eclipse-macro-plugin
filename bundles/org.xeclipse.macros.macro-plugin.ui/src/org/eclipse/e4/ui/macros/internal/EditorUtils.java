@@ -11,11 +11,11 @@
 package org.eclipse.e4.ui.macros.internal;
 
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.macros.IMacroContext;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.ISources;
+import org.xeclipse.macros.macro_plugin.core.IMacroContext;
 
 /**
  * Utilities related to getting/storing the current editor from/to the macro

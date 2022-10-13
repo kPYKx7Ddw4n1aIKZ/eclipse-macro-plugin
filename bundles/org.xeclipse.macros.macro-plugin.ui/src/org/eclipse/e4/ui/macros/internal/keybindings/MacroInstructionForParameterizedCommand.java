@@ -21,12 +21,12 @@ import org.eclipse.e4.core.commands.EHandlerService;
 import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
 import org.eclipse.e4.core.contexts.EclipseContextFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.macros.Activator;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroPlaybackContext;
-import org.eclipse.e4.core.macros.MacroPlaybackException;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
+import org.xeclipse.macros.macro_plugin.core.Activator;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.core.MacroPlaybackException;
 
 /**
  * A macro instruction for parameterized commands.

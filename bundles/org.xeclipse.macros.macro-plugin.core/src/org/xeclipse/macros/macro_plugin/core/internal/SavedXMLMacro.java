@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros.internal;
+package org.xeclipse.macros.macro_plugin.core.internal;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -28,12 +28,12 @@ import java.util.Set;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.eclipse.core.runtime.Assert;
-import org.eclipse.e4.core.macros.IMacroPlaybackContext;
-import org.eclipse.e4.core.macros.MacroPlaybackException;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.core.MacroPlaybackException;
 import org.xml.sax.InputSource;
 
 /**

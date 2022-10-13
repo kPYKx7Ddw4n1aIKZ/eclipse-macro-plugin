@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core;
 
 import java.util.Map;
 
@@ -18,7 +18,7 @@ import java.util.Map;
  *
  * Should be registered through the
  * org.eclipse.e4.core.macros.macroInstructionsFactory extension point (with a
- * match through {@link org.eclipse.e4.core.macros.IMacroInstruction#getId()}).
+ * match through {@link org.xeclipse.macros.macro_plugin.core.IMacroInstruction#getId()}).
  */
 public interface IMacroInstructionFactory {
 

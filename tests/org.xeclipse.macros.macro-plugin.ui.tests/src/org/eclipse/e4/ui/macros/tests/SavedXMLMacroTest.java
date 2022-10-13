@@ -19,15 +19,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.eclipse.core.runtime.Assert;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroInstructionFactory;
-import org.eclipse.e4.core.macros.IMacroPlaybackContext;
-import org.eclipse.e4.core.macros.MacroPlaybackException;
-import org.eclipse.e4.core.macros.internal.ComposableMacro;
-import org.eclipse.e4.core.macros.internal.SavedXMLMacro;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionFactory;
+import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.core.MacroPlaybackException;
+import org.xeclipse.macros.macro_plugin.core.internal.ComposableMacro;
+import org.xeclipse.macros.macro_plugin.core.internal.SavedXMLMacro;
 
 public class SavedXMLMacroTest {
 

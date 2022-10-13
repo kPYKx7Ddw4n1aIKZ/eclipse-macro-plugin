@@ -13,7 +13,7 @@ Require-Bundle: org.eclipse.osgi;bundle-version="3.11",
  org.eclipse.core.runtime;bundle-version="3.12"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
-Bundle-Activator: org.eclipse.e4.core.macros.Activator
-Export-Package: org.eclipse.e4.core.macros,
- org.eclipse.e4.core.macros.internal;x-friends:="org.xeclipse.macros.macro-plugin.ui.tests,org.xeclipse.macros.macro-plugin.ui,org.xeclipse.macros.macro-plugin.ui.workbench.texteditor"
+Bundle-Activator: org.xeclipse.macros.macro_plugin.core.Activator
+Export-Package: org.xeclipse.macros.macro_plugin.core,
+ org.xeclipse.macros.macro_plugin.core.internal;x-friends:="org.xeclipse.macros.macro-plugin.ui.tests,org.xeclipse.macros.macro-plugin.ui,org.xeclipse.macros.macro-plugin.ui.workbench.texteditor"
 Service-Component: OSGI-INF/macroService.xml

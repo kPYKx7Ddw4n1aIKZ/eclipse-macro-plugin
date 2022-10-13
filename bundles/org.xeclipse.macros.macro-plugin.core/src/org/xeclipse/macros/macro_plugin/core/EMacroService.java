@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core;
 
 /**
  * Extension with the public API for dealing with macros.
@@ -33,7 +33,7 @@ package org.eclipse.e4.core.macros;
  * registered through the
  * {@code org.eclipse.e4.core.macros.macroInstructionsFactory} extension point
  * (with a match through
- * {@link org.eclipse.e4.core.macros.IMacroInstruction#getId()}).
+ * {@link org.xeclipse.macros.macro_plugin.core.IMacroInstruction#getId()}).
  * </p>
  */
 public interface EMacroService {
@@ -61,7 +61,7 @@ public interface EMacroService {
 	 * registered through the
 	 * {@code org.eclipse.e4.core.macros.macroInstructionsFactory} extension point
 	 * (with a match through
-	 * {@link org.eclipse.e4.core.macros.IMacroInstruction#getId()})
+	 * {@link org.xeclipse.macros.macro_plugin.core.IMacroInstruction#getId()})
 	 *
 	 * This method is a no-op when no macro being currently recorded.
 	 *
@@ -176,7 +176,7 @@ public interface EMacroService {
 	 *
 	 * @return {@code true} if the given Eclipse Core Command should be recorded
 	 *         for playback when recording a macro (i.e., an
-	 *         {@link org.eclipse.e4.core.macros.IMacroInstruction} will be
+	 *         {@link org.xeclipse.macros.macro_plugin.core.IMacroInstruction} will be
 	 *         automatically created to play it back when in record mode).
 	 *
 	 */
@@ -195,7 +195,7 @@ public interface EMacroService {
 	 * @param recordInMacro
 	 *            if true, the command activation will be automatically recorded in
 	 *            the macro -- which means that an
-	 *            {@link org.eclipse.e4.core.macros.IMacroInstruction} will be
+	 *            {@link org.xeclipse.macros.macro_plugin.core.IMacroInstruction} will be
 	 *            automatically created to play it back when in record mode. If
 	 *            false, the activation of the command will not be recorded.
 	 *

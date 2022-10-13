@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros.internal;
+package org.xeclipse.macros.macro_plugin.core.internal;
 
 import java.io.File;
 import java.util.Arrays;
@@ -25,16 +25,16 @@ import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.macros.Activator;
-import org.eclipse.e4.core.macros.CancelMacroRecordingException;
-import org.eclipse.e4.core.macros.EMacroService;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroInstructionFactory;
-import org.eclipse.e4.core.macros.IMacroInstructionsListener;
-import org.eclipse.e4.core.macros.IMacroPlaybackContext;
-import org.eclipse.e4.core.macros.IMacroRecordContext;
-import org.eclipse.e4.core.macros.IMacroStateListener;
-import org.eclipse.e4.core.macros.MacroPlaybackException;
+import org.xeclipse.macros.macro_plugin.core.Activator;
+import org.xeclipse.macros.macro_plugin.core.CancelMacroRecordingException;
+import org.xeclipse.macros.macro_plugin.core.EMacroService;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionFactory;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionsListener;
+import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.core.IMacroRecordContext;
+import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
+import org.xeclipse.macros.macro_plugin.core.MacroPlaybackException;
 
 /**
  * An implementation of the public API for dealing with macros (mostly passes

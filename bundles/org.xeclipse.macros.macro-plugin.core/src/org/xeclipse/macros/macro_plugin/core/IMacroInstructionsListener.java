@@ -8,11 +8,19 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core;
 
 /**
- * A context created when macro record starts.
+ * An instance of this interface can be notified of changes during macro
+ * recording.
  */
-public interface IMacroRecordContext extends IMacroContext {
+public interface IMacroInstructionsListener {
 
+	/**
+	 * Called after a given macro instruction is added to the macro.
+	 *
+	 * @param macroInstruction
+	 *            the macro instruction added to the current macro.
+	 */
+	void postAddMacroInstruction(IMacroInstruction macroInstruction);
 }

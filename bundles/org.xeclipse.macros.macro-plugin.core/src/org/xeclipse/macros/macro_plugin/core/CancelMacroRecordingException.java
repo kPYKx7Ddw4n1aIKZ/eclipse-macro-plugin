@@ -8,34 +8,16 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core;
 
 /**
- * An exception to be raised if there is some issue when playing back macros.
+ * An exception to be thrown when the macro recording should be stopped.
  */
-public class MacroPlaybackException extends Exception {
-
-	/**
-	 * @param msg
-	 *            message for exception.
-	 */
-	public MacroPlaybackException(String msg) {
-		super(msg);
-	}
-
-	/**
-	 * @param msg
-	 *            message for exception.
-	 * @param e
-	 *            cause of exception.
-	 */
-	public MacroPlaybackException(String msg, Exception e) {
-		super(msg, e);
-	}
+public class CancelMacroRecordingException extends CancelMacroException {
 
 	/**
 	 * Generated serial version UID.
 	 */
-	private static final long serialVersionUID = -2589166244366784288L;
+	private static final long serialVersionUID = -5295116910722117940L;
 
 }

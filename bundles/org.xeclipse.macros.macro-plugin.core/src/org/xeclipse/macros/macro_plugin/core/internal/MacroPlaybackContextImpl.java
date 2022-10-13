@@ -8,13 +8,13 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros.internal;
+package org.xeclipse.macros.macro_plugin.core.internal;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroInstructionFactory;
-import org.eclipse.e4.core.macros.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionFactory;
+import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
 
 /**
  * Provides a way to recreate commands when playing back a macro.

@@ -8,19 +8,21 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core.internal;
+
+import org.eclipse.osgi.util.NLS;
 
 /**
- * An instance of this interface can be notified of changes during macro
- * recording.
+ * @since 0.1.0
  */
-public interface IMacroInstructionsListener {
+public class Messages extends NLS {
+	private static final String BUNDLE_NAME = "org.eclipse.e4.core.macros.internal.messages"; //$NON-NLS-1$
+	public static String SavedJSMacro_MacrosEvalError;
+	static {
+		// initialize resource bundle
+		NLS.initializeMessages(BUNDLE_NAME, Messages.class);
+	}
 
-	/**
-	 * Called after a given macro instruction is added to the macro.
-	 *
-	 * @param macroInstruction
-	 *            the macro instruction added to the current macro.
-	 */
-	void postAddMacroInstruction(IMacroInstruction macroInstruction);
+	private Messages() {
+	}
 }

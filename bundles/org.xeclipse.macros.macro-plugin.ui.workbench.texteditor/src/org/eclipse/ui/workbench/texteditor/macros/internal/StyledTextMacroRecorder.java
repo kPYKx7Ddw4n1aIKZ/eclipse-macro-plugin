@@ -10,11 +10,11 @@
  *******************************************************************************/
 package org.eclipse.ui.workbench.texteditor.macros.internal;
 
-import org.eclipse.e4.core.macros.EMacroService;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
+import org.xeclipse.macros.macro_plugin.core.EMacroService;
 
 /**
  * A listener that will record actions done in a StyledText and add them to the

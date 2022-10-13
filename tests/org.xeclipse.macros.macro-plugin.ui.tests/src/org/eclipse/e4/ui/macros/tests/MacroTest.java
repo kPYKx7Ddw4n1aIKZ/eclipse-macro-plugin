@@ -25,19 +25,19 @@ import org.eclipse.core.runtime.RegistryFactory;
 import org.eclipse.core.runtime.spi.RegistryStrategy;
 import org.eclipse.e4.core.contexts.EclipseContextFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.macros.CancelMacroRecordingException;
-import org.eclipse.e4.core.macros.EMacroService;
-import org.eclipse.e4.core.macros.IMacroInstruction;
-import org.eclipse.e4.core.macros.IMacroInstructionFactory;
-import org.eclipse.e4.core.macros.IMacroPlaybackContext;
-import org.eclipse.e4.core.macros.IMacroStateListener;
-import org.eclipse.e4.core.macros.internal.MacroManager;
-import org.eclipse.e4.core.macros.internal.MacroManager.StoredMacroReference;
-import org.eclipse.e4.core.macros.internal.MacroServiceImpl;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+import org.xeclipse.macros.macro_plugin.core.CancelMacroRecordingException;
+import org.xeclipse.macros.macro_plugin.core.EMacroService;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstructionFactory;
+import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
+import org.xeclipse.macros.macro_plugin.core.internal.MacroManager;
+import org.xeclipse.macros.macro_plugin.core.internal.MacroServiceImpl;
+import org.xeclipse.macros.macro_plugin.core.internal.MacroManager.StoredMacroReference;
 
 public class MacroTest {
 

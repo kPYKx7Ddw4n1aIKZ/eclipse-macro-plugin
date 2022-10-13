@@ -1,4 +1,4 @@
-package org.eclipse.e4.core.macros;
+package org.xeclipse.macros.macro_plugin.core;
 
 /**
  * Package providing abstractions for dealing with macro record/playback.

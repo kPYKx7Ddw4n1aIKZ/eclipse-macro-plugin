@@ -8,10 +8,10 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.core.macros.internal;
+package org.xeclipse.macros.macro_plugin.core.internal;
 
-import org.eclipse.e4.core.macros.IMacroPlaybackContext;
-import org.eclipse.e4.core.macros.MacroPlaybackException;
+import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.core.MacroPlaybackException;
 
 /**
  * Basic interface for a macro (private API, only meant to be used inside the

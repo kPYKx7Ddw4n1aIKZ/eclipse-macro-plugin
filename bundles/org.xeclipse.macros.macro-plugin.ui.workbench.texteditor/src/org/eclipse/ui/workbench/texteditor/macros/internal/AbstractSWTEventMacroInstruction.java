@@ -13,8 +13,8 @@ package org.eclipse.ui.workbench.texteditor.macros.internal;
 import java.util.HashMap;
 import java.util.Map;
 import org.eclipse.core.runtime.Assert;
-import org.eclipse.e4.core.macros.IMacroInstruction;
 import org.eclipse.swt.widgets.Event;
+import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
 
 /**
  * Base class for a macro instruction based on events from a given type.
