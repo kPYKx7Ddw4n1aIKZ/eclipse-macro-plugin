@@ -5,10 +5,10 @@
    <extension point="org.xeclipse.macros.macro-plugin.core.commandHandling">
 
       <!-- We should be able to stop the macro recording after the recording started. -->
-      <command id="org.eclipse.e4.ui.macros.toggleRecordMacro" recordMacroInstruction="false"/>
+      <command id="org.xeclipse.macros.macro-plugin.ui.toggleRecordMacro" recordMacroInstruction="false"/>
 
       <!-- Playback is Ok during recording, but only its side-effects are recorded, not the command itself. -->
-      <command id="org.eclipse.e4.ui.macros.macroPlayback" recordMacroInstruction="false"/>
+      <command id="org.xeclipse.macros.macro-plugin.ui.macroPlayback" recordMacroInstruction="false"/>
 
       <!-- Disable recording of actions not related to the editor (which the user may choose to do
       but shouldn't interfere with the macro recording). -->
@@ -25,7 +25,7 @@
    <extension
          point="org.xeclipse.macros.macro-plugin.core.macroInstructionsFactory">
       <macroInstructionsFactory
-            class="org.eclipse.e4.ui.macros.internal.keybindings.MacroInstructionForParameterizedCommandFactory"
+            class="org.xeclipse.macros.macro_plugin.ui.internal.keybindings.MacroInstructionForParameterizedCommandFactory"
             macroInstructionId="Command">
       </macroInstructionsFactory>
    </extension>
@@ -33,29 +33,29 @@
    <extension
          point="org.xeclipse.macros.macro-plugin.core.macroStateListeners">
       <macroStateListener
-            class="org.eclipse.e4.ui.macros.internal.keybindings.CommandManagerExecutionListenerInstaller">
+            class="org.xeclipse.macros.macro_plugin.ui.internal.keybindings.CommandManagerExecutionListenerInstaller">
       </macroStateListener>
       <macroStateListener
-            class="org.eclipse.e4.ui.macros.internal.actions.MacroUIUpdater">
+            class="org.xeclipse.macros.macro_plugin.ui.internal.actions.MacroUIUpdater">
       </macroStateListener>
    </extension>
 
    <extension
          point="org.eclipse.ui.commands">
       <category
-            id="org.eclipse.e4.ui.macros.category"
+            id="org.xeclipse.macros.macro-plugin.ui.category"
             name="%category.macros.name">
       </category>
       <command
-            categoryId="org.eclipse.e4.ui.macros.category"
-            defaultHandler="org.eclipse.e4.ui.macros.internal.actions.ToggleMacroRecordAction"
-            id="org.eclipse.e4.ui.macros.toggleRecordMacro"
+            categoryId="org.xeclipse.macros.macro-plugin.ui.category"
+            defaultHandler="org.xeclipse.macros.macro_plugin.ui.internal.actions.ToggleMacroRecordAction"
+            id="org.xeclipse.macros.macro-plugin.ui.toggleRecordMacro"
             name="%command.toggle_macro_record.label">
       </command>
       <command
-            categoryId="org.eclipse.e4.ui.macros.category"
-            defaultHandler="org.eclipse.e4.ui.macros.internal.actions.MacroPlaybackAction"
-            id="org.eclipse.e4.ui.macros.macroPlayback"
+            categoryId="org.xeclipse.macros.macro-plugin.ui.category"
+            defaultHandler="org.xeclipse.macros.macro_plugin.ui.internal.actions.MacroPlaybackAction"
+            id="org.xeclipse.macros.macro-plugin.ui.macroPlayback"
             name="%command.macro_playback.name">
       </command>
    </extension>
@@ -66,16 +66,16 @@
             allPopups="false"
             locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
          <toolbar
-               id="org.eclipse.e4.ui.macros.toolbar"
+               id="org.xeclipse.macros.macro-plugin.ui.toolbar"
                label="%toolbar.macro.label">
             <command
-                  commandId="org.eclipse.e4.ui.macros.toggleRecordMacro"
+                  commandId="org.xeclipse.macros.macro-plugin.ui.toggleRecordMacro"
                   icon="icons/full/dtool16/macro_record.png"
                   label="%command.toggle_macro_record.label"
                   style="toggle">
             </command>
             <command
-                  commandId="org.eclipse.e4.ui.macros.macroPlayback"
+                  commandId="org.xeclipse.macros.macro-plugin.ui.macroPlayback"
                   icon="icons/full/dtool16/macro_playback.png"
                   label="%command.macro_playback.name"
                   style="push">
