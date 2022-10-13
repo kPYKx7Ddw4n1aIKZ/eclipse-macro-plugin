@@ -8,20 +8,22 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.ui.workbench.texteditor.macros.internal;
+package org.xeclipse.macros.macro_plugin.ui.workbench.texteditor;
 
-import java.util.Map;
-import org.xeclipse.macros.macro_plugin.core.IMacroInstruction;
-import org.xeclipse.macros.macro_plugin.core.IMacroInstructionFactory;
+import org.eclipse.ui.plugin.AbstractUIPlugin;
 
-/**
- * A factory which will create macro instructions for styled text key presses.
- */
-public class StyledTextKeyDownMacroInstructionFactory implements IMacroInstructionFactory {
+@SuppressWarnings("javadoc")
+public class Activator extends AbstractUIPlugin {
 
-	@Override
-	public IMacroInstruction create(Map<String, String> stringMap) {
-		return StyledTextKeyDownMacroInstruction.fromMap(stringMap);
+	private static Activator plugin;
+
+	public Activator() {
+		super();
+		plugin = this;
+	}
+
+	public static Activator getDefault() {
+		return plugin;
 	}
 
 }

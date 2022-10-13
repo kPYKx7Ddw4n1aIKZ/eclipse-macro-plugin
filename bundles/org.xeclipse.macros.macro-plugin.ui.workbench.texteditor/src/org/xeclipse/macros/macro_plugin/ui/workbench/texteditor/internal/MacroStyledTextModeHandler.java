@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.ui.workbench.texteditor.macros.internal;
+package org.xeclipse.macros.macro_plugin.ui.workbench.texteditor.internal;
 
 import java.util.HashMap;
 import java.util.Map;

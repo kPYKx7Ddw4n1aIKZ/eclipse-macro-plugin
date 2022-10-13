@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Macros for text editors
 Bundle-SymbolicName: org.xeclipse.macros.macro-plugin.ui.workbench.texteditor;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Bundle-Activator: org.eclipse.ui.workbench.texteditor.macros.Activator
+Bundle-Activator: org.xeclipse.macros.macro_plugin.ui.workbench.texteditor.Activator
 Bundle-Vendor: Eclipse.org
 Require-Bundle: org.eclipse.e4.ui.bindings;bundle-version="0.10",
  org.xeclipse.macros.macro-plugin.ui;bundle-version="0.1",
