@@ -15,5 +15,5 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: org.eclipse.e4.core.macros.Activator
 Export-Package: org.eclipse.e4.core.macros,
- org.eclipse.e4.core.macros.internal;x-friends:="org.eclipse.e4.ui.macros.tests,org.eclipse.e4.ui.macros,org.eclipse.ui.workbench.texteditor.macros"
+ org.eclipse.e4.core.macros.internal;x-friends:="org.xeclipse.macros.macro-plugin.ui.tests,org.xeclipse.macros.macro-plugin.ui,org.xeclipse.macros.macro-plugin.ui.workbench.texteditor"
 Service-Component: OSGI-INF/macroService.xml
