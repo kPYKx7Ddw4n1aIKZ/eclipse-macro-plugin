@@ -214,7 +214,8 @@ public class KeyBindingDispatcherMacroIntegrationTest {
 			@Override
 			public boolean test(IConfigurationElement t) {
 				String namespace = t.getNamespaceIdentifier();
-				return namespace.equals("org.eclipse.e4.ui.macros") || namespace.equals("org.eclipse.e4.core.macros");
+				return namespace.equals("org.xeclipse.macros.macro-plugin.ui")
+						|| namespace.equals("org.xeclipse.macros.macro-plugin.core");
 			}
 		};
 
