@@ -101,7 +101,7 @@ public class MacroServiceImpl implements EMacroService {
 				stateLocation.append("macros"); //$NON-NLS-1$
 				File userHome = new File(System.getProperty("user.home")); //$NON-NLS-1$
 				File eclipseUserHome = new File(userHome, ".eclipse"); //$NON-NLS-1$
-				File eclipseUserHomeMacros = new File(eclipseUserHome, "org.eclipse.e4.core.macros"); //$NON-NLS-1$
+				File eclipseUserHomeMacros = new File(eclipseUserHome, "org.xeclipse.macros.macro-plugin.core"); //$NON-NLS-1$
 				File eclipseUserHomeMacrosLoadDir = new File(eclipseUserHomeMacros, "macros"); //$NON-NLS-1$
 				if (!eclipseUserHomeMacrosLoadDir.exists()) {
 					eclipseUserHomeMacrosLoadDir.mkdirs();
