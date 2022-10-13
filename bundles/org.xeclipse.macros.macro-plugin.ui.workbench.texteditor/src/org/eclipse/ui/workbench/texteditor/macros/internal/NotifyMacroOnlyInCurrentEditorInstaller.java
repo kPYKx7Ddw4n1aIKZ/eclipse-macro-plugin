@@ -13,8 +13,6 @@ package org.eclipse.ui.workbench.texteditor.macros.internal;
 import javax.inject.Inject;
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.macros.internal.EditorUtils;
-import org.eclipse.e4.ui.macros.internal.UserNotifications;
 import org.eclipse.swt.custom.StyledText;
 import org.xeclipse.macros.macro_plugin.core.CancelMacroException;
 import org.xeclipse.macros.macro_plugin.core.CancelMacroPlaybackException;
@@ -22,6 +20,8 @@ import org.xeclipse.macros.macro_plugin.core.CancelMacroRecordingException;
 import org.xeclipse.macros.macro_plugin.core.EMacroService;
 import org.xeclipse.macros.macro_plugin.core.IMacroRecordContext;
 import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
+import org.xeclipse.macros.macro_plugin.ui.internal.EditorUtils;
+import org.xeclipse.macros.macro_plugin.ui.internal.UserNotifications;
 
 /**
  * A listener to the macro state which will enable notifications to the user

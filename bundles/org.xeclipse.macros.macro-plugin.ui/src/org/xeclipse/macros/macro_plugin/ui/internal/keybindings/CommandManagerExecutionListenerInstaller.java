@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.ui.macros.internal.keybindings;
+package org.xeclipse.macros.macro_plugin.ui.internal.keybindings;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -16,13 +16,13 @@ import org.eclipse.core.commands.CommandManager;
 import org.eclipse.e4.core.commands.EHandlerService;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.ui.macros.internal.EditorUtils;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.ISources;
 import org.xeclipse.macros.macro_plugin.core.EMacroService;
 import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
 import org.xeclipse.macros.macro_plugin.core.IMacroRecordContext;
 import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
+import org.xeclipse.macros.macro_plugin.ui.internal.EditorUtils;
 
 /**
  * A macro state listener that will install the execution listener when in a

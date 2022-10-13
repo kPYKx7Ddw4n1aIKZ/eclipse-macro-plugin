@@ -13,7 +13,6 @@ package org.eclipse.ui.workbench.texteditor.macros.internal;
 import javax.inject.Inject;
 import javax.inject.Named;
 import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.ui.macros.internal.EditorUtils;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.ISources;
@@ -22,6 +21,7 @@ import org.xeclipse.macros.macro_plugin.core.IMacroContext;
 import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
 import org.xeclipse.macros.macro_plugin.core.IMacroRecordContext;
 import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
+import org.xeclipse.macros.macro_plugin.ui.internal.EditorUtils;
 
 /**
  * Used for enabling macro mode in editors as well as starting and stopping the

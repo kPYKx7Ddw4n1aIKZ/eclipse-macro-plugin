@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.ui.macros.internal;
+package org.xeclipse.macros.macro_plugin.ui.internal;
 
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.swt.custom.StyledText;

@@ -8,14 +8,13 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.ui.macros.internal;
+package org.xeclipse.macros.macro_plugin.ui.internal;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.ui.macros.Activator;
 import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.jface.action.IStatusLineManager;
 import org.eclipse.jface.dialogs.MessageDialog;
@@ -26,6 +25,7 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IEditorSite;
 import org.eclipse.ui.ISources;
+import org.xeclipse.macros.macro_plugin.ui.Activator;
 
 /**
  * Helper class to show notifications to the user.

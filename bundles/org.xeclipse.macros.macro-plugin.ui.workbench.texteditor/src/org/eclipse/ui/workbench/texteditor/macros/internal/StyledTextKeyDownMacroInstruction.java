@@ -11,11 +11,11 @@
 package org.eclipse.ui.workbench.texteditor.macros.internal;
 
 import java.util.Map;
-import org.eclipse.e4.ui.macros.internal.EditorUtils;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.widgets.Event;
 import org.xeclipse.macros.macro_plugin.core.IMacroPlaybackContext;
+import org.xeclipse.macros.macro_plugin.ui.internal.EditorUtils;
 
 /**
  * A macro instruction to replay a key down (always followed by a key up).

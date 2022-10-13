@@ -43,8 +43,6 @@ import org.eclipse.e4.ui.bindings.internal.BindingTable;
 import org.eclipse.e4.ui.bindings.internal.BindingTableManager;
 import org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher;
 import org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.KeyDownFilter;
-import org.eclipse.e4.ui.macros.internal.keybindings.CommandManagerExecutionListener;
-import org.eclipse.e4.ui.macros.internal.keybindings.CommandManagerExecutionListenerInstaller;
 import org.eclipse.e4.ui.services.ContextServiceAddon;
 import org.eclipse.e4.ui.services.EContextService;
 import org.eclipse.jface.bindings.Binding;
@@ -70,6 +68,8 @@ import org.xeclipse.macros.macro_plugin.core.IMacroRecordContext;
 import org.xeclipse.macros.macro_plugin.core.IMacroStateListener;
 import org.xeclipse.macros.macro_plugin.core.internal.MacroManager;
 import org.xeclipse.macros.macro_plugin.core.internal.MacroServiceImpl;
+import org.xeclipse.macros.macro_plugin.ui.internal.keybindings.CommandManagerExecutionListener;
+import org.xeclipse.macros.macro_plugin.ui.internal.keybindings.CommandManagerExecutionListenerInstaller;
 
 @SuppressWarnings("restriction")
 public class KeyBindingDispatcherMacroIntegrationTest {

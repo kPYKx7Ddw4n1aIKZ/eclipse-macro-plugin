@@ -12,8 +12,6 @@ package org.eclipse.ui.workbench.texteditor.macros.internal;
 
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.macros.internal.EditorUtils;
-import org.eclipse.e4.ui.macros.internal.UserNotifications;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.ui.IPartListener2;
 import org.eclipse.ui.IWindowListener;
@@ -22,6 +20,8 @@ import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 import org.xeclipse.macros.macro_plugin.core.EMacroService;
 import org.xeclipse.macros.macro_plugin.core.IMacroRecordContext;
+import org.xeclipse.macros.macro_plugin.ui.internal.EditorUtils;
+import org.xeclipse.macros.macro_plugin.ui.internal.UserNotifications;
 
 /**
  * Listens for window and part changes to notify that macro recording is not

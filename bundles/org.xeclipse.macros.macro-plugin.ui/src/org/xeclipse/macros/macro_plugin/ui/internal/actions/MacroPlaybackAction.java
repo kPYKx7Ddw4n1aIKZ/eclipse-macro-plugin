@@ -8,13 +8,12 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.ui.macros.internal.actions;
+package org.xeclipse.macros.macro_plugin.ui.internal.actions;
 
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.ui.macros.Activator;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.handlers.HandlerUtil;
@@ -22,6 +21,7 @@ import org.eclipse.ui.statushandlers.StatusAdapter;
 import org.eclipse.ui.statushandlers.StatusManager;
 import org.xeclipse.macros.macro_plugin.core.EMacroService;
 import org.xeclipse.macros.macro_plugin.core.MacroPlaybackException;
+import org.xeclipse.macros.macro_plugin.ui.Activator;
 
 /**
  * Activates the playback of the last macro.

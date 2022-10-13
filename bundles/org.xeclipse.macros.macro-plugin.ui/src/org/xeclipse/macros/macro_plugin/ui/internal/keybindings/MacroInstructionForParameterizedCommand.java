@@ -8,7 +8,7 @@
  * Contributors:
  *     Fabio Zadrozny - initial API and implementation - http://eclip.se/8519
  *******************************************************************************/
-package org.eclipse.e4.ui.macros.internal.keybindings;
+package org.xeclipse.macros.macro_plugin.ui.internal.keybindings;
 
 import java.util.HashMap;
 import java.util.Map;

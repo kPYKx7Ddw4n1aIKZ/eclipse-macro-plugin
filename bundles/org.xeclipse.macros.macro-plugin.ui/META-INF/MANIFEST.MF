@@ -3,12 +3,12 @@ Bundle-ManifestVersion: 2
 Bundle-Name: E4 Macro Recording and Playback
 Bundle-SymbolicName: org.xeclipse.macros.macro-plugin.ui;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Bundle-Activator: org.eclipse.e4.ui.macros.Activator
+Bundle-Activator: org.xeclipse.macros.macro_plugin.ui.Activator
 Bundle-Vendor: Eclipse.org
-Export-Package: org.eclipse.e4.ui.macros,
- org.eclipse.e4.ui.macros.internal;x-friends:="org.xeclipse.macros.macro-plugin.ui.workbench.texteditor",
- org.eclipse.e4.ui.macros.internal.actions;x-friends:="org.eclipse.e4.ui.bindings.tests",
- org.eclipse.e4.ui.macros.internal.keybindings;x-friends:="org.eclipse.e4.ui.bindings.tests"
+Export-Package: org.xeclipse.macros.macro_plugin.ui,
+ org.xeclipse.macros.macro_plugin.ui.internal;x-friends:="org.xeclipse.macros.macro-plugin.ui.workbench.texteditor",
+ org.xeclipse.macros.macro_plugin.ui.internal.actions;x-friends:="org.eclipse.e4.ui.bindings.tests",
+ org.xeclipse.macros.macro_plugin.ui.internal.keybindings;x-friends:="org.eclipse.e4.ui.bindings.tests"
 Require-Bundle: org.eclipse.e4.ui.model.workbench;bundle-version="1.1",
  org.eclipse.e4.ui.workbench.renderers.swt,
  org.eclipse.e4.ui.workbench,
