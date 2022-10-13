@@ -4,17 +4,17 @@
    <extension
          point="org.xeclipse.macros.macro-plugin.core.macroStateListeners">
       <macroStateListener
-            class="org.eclipse.ui.workbench.texteditor.macros.internal.NotifyMacroOnlyInCurrentEditorInstaller">
+            class="org.xeclipse.macros.macro_plugin.ui.workbench.texteditor.internal.NotifyMacroOnlyInCurrentEditorInstaller">
       </macroStateListener>
       <macroStateListener
-            class="org.eclipse.ui.workbench.texteditor.macros.internal.MacroStyledTextInstaller">
+            class="org.xeclipse.macros.macro_plugin.ui.workbench.texteditor.internal.MacroStyledTextInstaller">
       </macroStateListener>
    </extension>
 
    <extension
          point="org.xeclipse.macros.macro-plugin.core.macroInstructionsFactory">
       <macroInstructionsFactory
-            class="org.eclipse.ui.workbench.texteditor.macros.internal.StyledTextKeyDownMacroInstructionFactory"
+            class="org.xeclipse.macros.macro_plugin.ui.workbench.texteditor.internal.StyledTextKeyDownMacroInstructionFactory"
             macroInstructionId="KeyEvent">
       </macroInstructionsFactory>
    </extension>
