@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Schema file written by PDE -->
-<schema targetNamespace="org.eclipse.e4.ui.macros" xmlns="http://www.w3.org/2001/XMLSchema">
+<schema targetNamespace="org.xeclipse.macros.macro-plugin.ui" xmlns="http://www.w3.org/2001/XMLSchema">
 <annotation>
       <appinfo>
-         <meta.schema plugin="org.eclipse.e4.ui.macros" id="commandHandling" name=""/>
+         <meta.schema plugin="org.xeclipse.macros.macro-plugin.ui" id="commandHandling" name=""/>
       </appinfo>
       <documentation>
          Describes how to customize how the macro framework handles invocations of Eclipse Core Commands during macro recording. When recording a macro the default behaviour is to record a command invocation as a macro instruction, and this extension allows for skipping the creation of the macro instruction for a command invocation.
 
-It is also possible to programatically customize how Eclipse commands are handled through the org.eclipse.e4.core.macros.EMacroService.
+It is also possible to programatically customize how Eclipse commands are handled through the org.xeclipse.macros.macro-plugin.core.EMacroService.
       </documentation>
    </annotation>
 
@@ -94,7 +94,7 @@ Examples of actions whose activation should not be recorded (in which case, they
          <meta.section type="examples"/>
       </appinfo>
       <documentation>
-         &lt;extension point=&quot;org.eclipse.e4.core.macros.commandHandling&quot;&gt;
+         &lt;extension point=&quot;org.xeclipse.macros.macro-plugin.core.commandHandling&quot;&gt;
     &lt;command id=&quot;org.eclipse.ui.edit.text.contentAssist.proposals&quot; recordMacroInstruction=&quot;false&quot;/&gt;
 &lt;/extension&gt;
 

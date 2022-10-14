@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Schema file written by PDE -->
-<schema targetNamespace="org.eclipse.e4.core.macros" xmlns="http://www.w3.org/2001/XMLSchema">
+<schema targetNamespace="org.xeclipse.macros.macro-plugin.core" xmlns="http://www.w3.org/2001/XMLSchema">
 <annotation>
       <appinfo>
-         <meta.schema plugin="org.eclipse.e4.core.macros" id="macroStateListeners" name="Listeners for changes on the macro state"/>
+         <meta.schema plugin="org.xeclipse.macros.macro-plugin.core" id="macroStateListeners" name="Listeners for changes on the macro state"/>
       </appinfo>
       <documentation>
          Allows for other plugins to register listeners to be notified of changes in the macro service (i.e., when a record or playback is started or stopped).
@@ -61,7 +61,7 @@ These events signal that packages should install and remove instrumentation for 
 Note: it is also possible to programatically add an IMacroStateListener to the EMacroService (so, existing instances, such as the text editor can act upon starting a macro record session and start recording keystrokes or disable code-completion if it cannot deal with playing it back).
                </documentation>
                <appinfo>
-                  <meta.attribute kind="java" basedOn=":org.eclipse.e4.core.macros.IMacroStateListener"/>
+                  <meta.attribute kind="java" basedOn=":org.xeclipse.macros.macro-plugin.core.IMacroStateListener"/>
                </appinfo>
             </annotation>
          </attribute>
@@ -82,7 +82,7 @@ Note: it is also possible to programatically add an IMacroStateListener to the E
          <meta.section type="examples"/>
       </appinfo>
       <documentation>
-         &lt;extension point=&quot;org.eclipse.e4.core.macros.macroStateListeners&quot;&gt;
+         &lt;extension point=&quot;org.xeclipse.macros.macro-plugin.core.macroStateListeners&quot;&gt;
     &lt;macroStateListener
         class=&quot;org.eclipse.impl.MyIMacroStateListenerImpl&quot;&gt;
     &lt;/macroStateListener&gt;
