@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.eclipse.e4.core.macros.macroService">
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.xeclipse.macros.macro_plugin.core.macroService">
    <implementation class="org.xeclipse.macros.macro_plugin.core.internal.MacroServiceCreationFunction"/>
    <service>
       <provide interface="org.eclipse.e4.core.contexts.IContextFunction"/>
