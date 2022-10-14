@@ -18,7 +18,7 @@ import org.eclipse.osgi.util.NLS;
 @SuppressWarnings("javadoc")
 public class Messages extends NLS {
 
-	private static final String BUNDLE_NAME = "org.eclipse.e4.ui.macros.internal.keybindings.messages"; //$NON-NLS-1$
+	private static final String BUNDLE_NAME = "org.xeclipse.macros.macro_plugin.ui.internal.keybindings.messages"; //$NON-NLS-1$
 
 	public static String CommandManagerExecutionListener_CommandNotRecorded;
 

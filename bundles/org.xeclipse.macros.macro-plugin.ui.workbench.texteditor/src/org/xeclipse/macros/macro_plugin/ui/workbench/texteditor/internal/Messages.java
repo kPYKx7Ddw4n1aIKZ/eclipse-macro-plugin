@@ -16,7 +16,7 @@ import org.eclipse.osgi.util.NLS;
  *
  */
 public class Messages extends NLS {
-	private static final String BUNDLE_NAME = "org.eclipse.ui.workbench.texteditor.macros.internal.messages"; //$NON-NLS-1$
+	private static final String BUNDLE_NAME = "org.xeclipse.macros.macro_plugin.ui.workbench.texteditor.internal.messages"; //$NON-NLS-1$
 	public static String NotifyMacroOnlyInCurrentEditor_NotRecording;
 	public static String NotifyMacroOnlyInCurrentEditor_Recording;
 	public static String StyledTextKeyDownMacroInstruction_KeyDown;

@@ -16,7 +16,7 @@ import org.eclipse.osgi.util.NLS;
  * @since 0.1.0
  */
 public class Messages extends NLS {
-	private static final String BUNDLE_NAME = "org.eclipse.e4.core.macros.internal.messages"; //$NON-NLS-1$
+	private static final String BUNDLE_NAME = "org.xeclipse.macros.macro_plugin.core.internal.messages"; //$NON-NLS-1$
 	public static String SavedJSMacro_MacrosEvalError;
 	static {
 		// initialize resource bundle
