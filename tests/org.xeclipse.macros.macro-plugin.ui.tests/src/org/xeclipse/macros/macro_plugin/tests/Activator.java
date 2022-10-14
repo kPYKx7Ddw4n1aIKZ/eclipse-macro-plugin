@@ -18,7 +18,7 @@ import org.osgi.framework.BundleContext;
 public class Activator implements BundleActivator {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "org.eclipse.e4.ui.macros.tests"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "org.xeclipse.macros.macro-plugin.ui.tests"; //$NON-NLS-1$
 
 	// The shared instance
 	private static Activator plugin;

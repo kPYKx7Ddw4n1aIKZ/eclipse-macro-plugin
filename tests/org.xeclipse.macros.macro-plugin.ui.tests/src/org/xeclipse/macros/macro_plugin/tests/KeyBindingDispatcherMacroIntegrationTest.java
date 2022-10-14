@@ -254,8 +254,8 @@ public class KeyBindingDispatcherMacroIntegrationTest {
 		macroRecordContext.set("target_styled_text", styledText); // org.eclipse.e4.ui.macros.Activator.TARGET_STYLED_TEXT
 
 		Assert.assertEquals(
-				Arrays.asList("org.eclipse.e4.ui.macros.internal.actions.MacroUIUpdater",
-						"org.eclipse.e4.ui.macros.internal.keybindings.CommandManagerExecutionListenerInstaller"),
+				Arrays.asList("org.xeclipse.macros.macro_plugin.ui.internal.actions.MacroUIUpdater",
+						"org.xeclipse.macros.macro_plugin.ui.internal.keybindings.CommandManagerExecutionListenerInstaller"),
 				getRegisteredClasses(macroService));
 		IMacroStateListener[] macroStateListeners = ((MacroServiceImpl) macroService)
 				.getMacroStateListeners();
