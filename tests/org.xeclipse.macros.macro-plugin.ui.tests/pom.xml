@@ -14,13 +14,13 @@
   <parent>
     <groupId>org.xeclipse.macros</groupId>
     <artifactId>macro-plugin</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
     <relativePath>../../</relativePath>
   </parent>
 
   <groupId>org.xeclipse.macros</groupId>
   <artifactId>org.xeclipse.macros.macro-plugin.ui.tests</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
   <packaging>eclipse-test-plugin</packaging>
 
 </project>

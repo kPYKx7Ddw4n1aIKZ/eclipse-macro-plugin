@@ -15,11 +15,11 @@ apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <groupId>org.xeclipse.macros</groupId>
     <artifactId>macro-plugin</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
   </parent>
   <groupId>org.xeclipse.macros</groupId>
   <artifactId>org.xeclipse.macros.macro-plugin.bundles</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>

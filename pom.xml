@@ -14,7 +14,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.xeclipse.macros</groupId>
   <artifactId>macro-plugin</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
     <tycho.version>2.7.5</tycho.version>
